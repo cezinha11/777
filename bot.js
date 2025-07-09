@@ -8,17 +8,7 @@ puppeteer.use(StealthPlugin());
 
 const COMMON_USER_AGENTS_SET2 = [
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0',
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/120.0.0.0 Safari/537.36',
-    'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0',
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36',
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Safari/605.1.15',
-    'Mozilla/5.0 (Linux; Android 11; SM-T500) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.120 Safari/537.36',
-    'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Mobile/15E148 Safari/604.1',
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46'
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 ];
 
 function getRandomUserAgentSet2() {
@@ -26,33 +16,13 @@ function getRandomUserAgentSet2() {
 }
 
 const proxies = [
-    { server: 'gw.dataimpulse.com:10000', username: 'f59d7d704e89d0e14b9d__cr.br', password: '7b7b89b4885ec456' },
-    { server: 'gw.dataimpulse.com:10001', username: 'f59d7d704e89d0e14b9d__cr.br', password: '7b7b89b4885ec456' },
-    { server: 'gw.dataimpulse.com:10002', username: 'f59d7d704e89d0e14b9d__cr.br', password: '7b7b89b4885ec456' },
-    { server: 'gw.dataimpulse.com:10003', username: 'f59d7d704e89d0e14b9d__cr.br', password: '7b7b89b4885ec456' },
-    { server: 'gw.dataimpulse.com:10004', username: 'f59d7d704e89d0e14b9d__cr.br', password: '7b7b89b4885ec456' },
-    { server: 'gw.dataimpulse.com:10005', username: 'f59d7d704e89d0e14b9d__cr.br', password: '7b7b89b4885ec456' },
-    { server: 'gw.dataimpulse.com:10006', username: 'f59d7d704e89d0e14b9d__cr.br', password: '7b7b89b4885ec456' },
-    { server: 'gw.dataimpulse.com:10007', username: 'f59d7d704e89d0e14b9d__cr.br', password: '7b7b89b4885ec456' },
-    { server: 'gw.dataimpulse.com:10008', username: 'f59d7d704e89d0e14b9d__cr.br', password: '7b7b89b4885ec456' },
-    { server: 'gw.dataimpulse.com:10009', username: 'f59d7d704e89d0e14b9d__cr.br', password: '7b7b89b4885ec456' },
-    { server: 'gw.dataimpulse.com:10010', username: 'f59d7d704e89d0e14b9d__cr.br', password: '7b7b89b4885ec456' },
-    { server: 'gw.dataimpulse.com:10011', username: 'f59d7d704e89d0e14b9d__cr.br', password: '7b7b89b4885ec456' }
+    { server: 'proxyhost', username: 'youruser', password: 'yourpass' },
+    { server: 'proxyhost', username: 'youruser', password: 'yourpass' }
 ];
 
 const contasConfig = [
     { id: 1, perfilChrome: 'C:\\perfil_chrome_conta1', userAgent: getRandomUserAgentSet2(), proxy: proxies[0] },
-    { id: 2, perfilChrome: 'C:\\perfil_chrome_conta2', userAgent: getRandomUserAgentSet2(), proxy: proxies[1] },
-    { id: 3, perfilChrome: 'C:\\perfil_chrome_conta3', userAgent: getRandomUserAgentSet2(), proxy: proxies[2] },
-    { id: 4, perfilChrome: 'C:\\perfil_chrome_conta4', userAgent: getRandomUserAgentSet2(), proxy: proxies[3] },
-    { id: 5, perfilChrome: 'C:\\perfil_chrome_conta5', userAgent: getRandomUserAgentSet2(), proxy: proxies[4] },
-    { id: 6, perfilChrome: 'C:\\perfil_chrome_conta6', userAgent: getRandomUserAgentSet2(), proxy: proxies[5] },
-    { id: 7, perfilChrome: 'C:\\perfil_chrome_conta7', userAgent: getRandomUserAgentSet2(), proxy: proxies[6] },
-    { id: 8, perfilChrome: 'C:\\perfil_chrome_conta8', userAgent: getRandomUserAgentSet2(), proxy: proxies[7] },
-    { id: 9, perfilChrome: 'C:\\perfil_chrome_conta9', userAgent: getRandomUserAgentSet2(), proxy: proxies[8] },
-    { id: 10, perfilChrome: 'C:\\perfil_chrome_conta10', userAgent: getRandomUserAgentSet2(), proxy: proxies[9] },
-    { id: 11, perfilChrome: 'C:\\perfil_chrome_conta11', userAgent: getRandomUserAgentSet2(), proxy: proxies[10] },
-    { id: 12, perfilChrome: 'C:\\perfil_chrome_conta12', userAgent: getRandomUserAgentSet2(), proxy: proxies[11] }
+    { id: 2, perfilChrome: 'C:\\perfil_chrome_conta2', userAgent: getRandomUserAgentSet2(), proxy: proxies[1] }
 ];
 
 const usedUAsSet2 = new Set();
@@ -69,7 +39,6 @@ contasConfig.forEach(config => {
 
 const targetUrl = 'https://777bit10.vip/promotion/redeem';
 const monitoredChannel = '120363272808166536@newsletter';
-//const monitoredChannel = '120363388095338597@newsletter';
 const regex = /➡️\s*([\d\s]+?)\s*⬅️/g;
 
 async function sleep(ms, addRandomness = true) {
